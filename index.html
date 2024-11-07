@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proporzioni con Percentuali</title>
-    <style>
-        .contenitore {
-            width: 80%; /* La larghezza del contenitore è il 80% della larghezza della finestra del browser */
-            height: 200px;
-            background-color: lightblue;
-        }
-        .elemento {
-            width: 50%; /* La larghezza dell'elemento è il 50% della larghezza del contenitore */
-            height: 100px;
-            background-color: orange;
-        }
-    </style>
+    <title>Proporzioni in HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="contenitore">
-        <div class="elemento"></div>
-    </div>
+    <header>
+        <h1>Proporzioni in HTML e CSS</h1>
+        <p>Un esempio pratico di come utilizzare le proporzioni nei layout web.</p>
+    </header>
+
+    <section class="contenitore">
+        <div class="elemento percentuali">
+            <h2>Proporzione Percentuale</h2>
+            <p>La larghezza è il 50% del contenitore.</p>
+        </div>
+
+        <div class="elemento em-rem">
+            <h2>Proporzione con em e rem</h2>
+            <p>La larghezza e l'altezza sono in em e rem relative alla dimensione del font.</p>
+        </div>
+
+        <div class="elemento vw-vh">
+            <h2>Proporzione con vw e vh</h2>
+            <p>La larghezza e l'altezza sono in percentuale rispetto alla finestra del browser.</p>
+        </div>
+
+        <div class="elemento flexbox">
+            <h2>Proporzione con Flexbox</h2>
+            <p>Gli elementi si distribuiscono in modo proporzionale grazie a Flexbox.</p>
+        </div>
+    </section>
 
 </body>
 </html>
